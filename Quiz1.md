@@ -113,9 +113,9 @@ The steps above must be completed before you can continue.
    - you can ask `prof` questions but you only get _one good_ `freebie`
 
 7. the finished `art-work` must align with your `information`
-   - [] I used (enter your `function1`) HERE:
-   - [] I used (enter your `function2`) HERE:
-   - [] I had (enter your `emotion`) HERE:
+   - [] I used (enter your `function1`) HERE:function setup sound part change the data and change the css layout
+   - [] I used (enter your `function2`) HERE:Change the function draw and use movedx and movey
+   - [] I had (enter your `emotion`) HERE:Joy
 
 ---
 

@@ -4,7 +4,7 @@ let bassSynth, cymbalSynth;
 let counter;
 
 // image
-const barWidth = 20;
+const barWidth = 10;
 let lastBar = -1;
 
 function setup() {
@@ -19,21 +19,21 @@ function setup() {
 
   bassSynth = new Tone.MembraneSynth().toDestination();
   cymbalSynth = new Tone.MetalSynth({
-    "frequency": 250,
+    "frequency": 150,
     "envelope": {
-      "attack": 0.001,
+      "attack": 2,
       "decay": 0.1,
-      "release": 0.01,
+      "release": 0.5,
     },
-    "harmonicity": 3.1,
-    "modulationIndex": 16,
-    "resonance": 4000,
+    "harmonicity": 4.1,
+    "modulationIndex": 8,
+    "resonance": 100,
     "octaves": 0.5,
   }).toDestination();
 
   loopBeat = new Tone.Loop(song, "16n");
 
-  Tone.Transport.bpm.value = 140;
+  Tone.Transport.bpm.value = 100;
   Tone.Transport.start();
   loopBeat.start(0);
 }
@@ -57,11 +57,12 @@ function song(time) {
 
 // image
 function draw() {
-  let whichBar = mouseX / barWidth;
+  let whichBar = movedX;
   if (whichBar !== lastBar) {
     let barX = whichBar * barWidth;
-    fill(mouseY, height, height);
+    fill(movedY, width, height);
     rect(barX, 0, barWidth, height);
     lastBar = whichBar;
   }
 }
+
