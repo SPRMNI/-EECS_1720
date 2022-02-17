@@ -1,8 +1,4 @@
 # THIS IS MY ARTIST STATEMENT - MY "WHY"
-first I want tomake a bot that can send the message that it receive from the Python then though api send to the Twitter and post it.
-
-
-
 API KEY 
 ywmbFRbLn2GPyKweOGjZz1sfW
 
